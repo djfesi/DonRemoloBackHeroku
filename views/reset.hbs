@@ -1,0 +1,29 @@
+<section class="mt-5 container">
+    <div class="row justify-content-center">
+        <div class="col-10 col-lg-5">
+            <form style="height: 400px; width: 550px; background-color: #e54322" class="border border-dark rounded p-4 user_card" action="/users/reset/{{token}}" method="post">
+                <h2 style="color: beige;" class="text-center my-5">Restaurar Contraseña</h2>
+                <input type="text" value='{{tokenStatus.name}}' autocomplete="name" hidden>
+                <input class="form-control mt-3" type="password" maxlength="15" placeholder="Type new password"
+                    autocomplete="new-password" name="pass1" autofocus>
+                <div style="color: beige" id="passwordHelpBlock" class="form-text mb-4">
+                    Ingrese su nueva contraseña.
+                </div>
+                <input class="form-control" type="password" maxlength="15" placeholder="Repeat new password"
+                    autocomplete="new-password" name="pass2">
+                <div id="passwordHelpBlock" style="color: beige" class="form-text mb-5">
+                    Repita su nueva contraseña.
+                </div>
+                {{#each arrWarnings}}
+                <div class="alert alert-danger" role="alert">
+                    {{msg}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {{/each}}
+                <div class="d-flex mb-5 justify-content-center">
+                    <input style="font-weight: bold; background: beige; color: #e54322" type="submit" class="btn btn-success" value="Cambiar">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    background-image: url(/assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.sonrisas{
+    margin: 10px;
+    color: #ec9d84; 
+    font-size: 25px;
+}
+
+#pizzaBanner {
+    animation: float 3s linear infinite; 
+    display: flex;
+    margin: auto;
+    width: 40%; 
+    min-width: 330px
+}
+
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+}
+
+.title{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #333;
+}
+
+.description{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #333;
+}
+
+@media (max-width:400px) {
+.title{
+    font-size: 15px;
+}
+.description{
+    font-size: small;
+}
+
+.sonrisas{
+    margin: 1px;
+    font-size: 15px;
+}
+
+
+}
