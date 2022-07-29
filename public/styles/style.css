@@ -6,10 +6,13 @@
 
 body{
     background-image: url(/assets/fondo.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
+.titleIndex{
+    font-size: 40px;
+}
 
 .sonrisas{
     margin: 10px;
